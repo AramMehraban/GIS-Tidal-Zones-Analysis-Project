@@ -1,0 +1,25 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated output
+outputs/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Local database
+data/tidal.db
