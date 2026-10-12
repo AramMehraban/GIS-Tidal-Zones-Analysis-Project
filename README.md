@@ -1,223 +1,182 @@
-#  Coastal Tidal Zones Analysis
+# Coastal Tidal Zones Analysis
+### GIS · Python · Spatial Analysis · Temporal Data Analytics
 
-### GIS + Python Spatial & Temporal Analysis
+An end-to-end GIS and data analytics portfolio project exploring the spatial and temporal characteristics of coastal tidal zones using Python, geospatial processing, statistical analysis, and scientific visualization.
 
-##  Overview
+> **Data transparency:** This project uses a synthetic dataset created for portfolio and analytical workflow demonstration. The results do not represent measurements from a real coastal monitoring program.
 
-This project analyzes the **spatial and temporal characteristics of coastal tidal zones** using Python-based GIS, statistical analysis, database integration, and scientific visualization.
+## Project Overview
 
-The analysis focuses on three ecological coastal zones:
+Coastal environments are shaped by tidal processes and changing environmental conditions. This project demonstrates how tabular data can be transformed into geospatial datasets, analyzed over time, and presented through reproducible analytical workflows.
 
-* 🟡 **Intertidal**
-* 🔵 **Subtidal**
-* 🔴 **Supratidal**
+The analysis focuses on three coastal tidal zones:
 
-The project demonstrates an end-to-end GIS and data analytics workflow, from data generation and statistical analysis to spatial data processing and visualization.
+- 🟡 **Intertidal Zone** — the area between high and low tide, alternately exposed and submerged
+- 🔵 **Subtidal Zone** — the area that normally remains underwater
+- 🔴 **Supratidal Zone** — the area above normal tidal influence that may be affected by exceptional tides or wave action
 
----
+The project covers a synthetic time series from **1982 to 2018**.
 
 ## Project Objectives
 
-The main objectives of this project are to:
+- Explore temporal patterns across coastal tidal zones
+- Compare distributions and variations in the dataset
+- Process and manage spatial data with Python GIS libraries
+- Create GIS outputs in GeoPackage format
+- Integrate analytical workflows with SQLite
+- Generate clear statistical and geospatial visualizations
+- Demonstrate reproducible GIS and data analytics skills
 
-* Analyze changes in coastal tidal zones over time
-* Explore temporal trends between **1982 and 2018**
-* Create and process spatial GIS data using Python
-* Store analytical data in a SQLite database
-* Generate statistical and scientific visualizations
-* Demonstrate an end-to-end **GIS + Python + Data Analytics** workflow
+## Technologies
 
----
+| Area | Tools |
+|---|---|
+| Programming | Python |
+| Data analysis | Pandas, NumPy |
+| GIS and spatial processing | GeoPandas, Shapely |
+| Geospatial data format | GeoPackage (`.gpkg`) |
+| Database | SQLite |
+| Visualization | Matplotlib, Seaborn |
+| Development | Jupyter Notebook, Git, GitHub |
 
-## 🗺️ Tidal Zone Definitions
+## Analytical Workflow
 
-| Zone              | Description                         |
-| ----------------- | ----------------------------------- |
-| 🔵 **Subtidal**   | Permanently underwater coastal zone |
-| 🟡 **Intertidal** | Area between high and low tide      |
-| 🔴 **Supratidal** | Area above normal tidal influence   |
+1. **Data preparation** — prepare the synthetic tidal dataset.
+2. **Temporal analysis** — explore changes across the 1982–2018 period.
+3. **Statistical analysis** — compare distributions and patterns across tidal zones.
+4. **Geospatial processing** — transform tabular records into spatial data structures.
+5. **Data storage** — integrate the analytical workflow with SQLite.
+6. **Visualization** — create plots and maps to communicate the results.
+7. **Interpretation** — summarize patterns and limitations without presenting synthetic results as real-world observations.
 
----
+## Visual Results
 
-## Tools & Technologies
+The repository contains the following visual outputs.
 
-### Programming & Data Analysis
+### GIS Visualization
 
-* Python
-* Pandas
-* NumPy
+![Tidal Zone GIS Visualization](figures/Tidal-Zone-GIS-Visualization.png)
 
-### GIS & Spatial Analysis
+### Height Comparison Across Basins
 
-* GeoPandas
-* Shapely
-* GeoPackage
+![Height Comparison Across Basins](figures/Height-Comparison-Across-Basins.png)
 
-### Database
+### Height Distribution Across Tidal Zones
 
-* SQLite
+![Height Distribution Across Tidal Zones](figures/Height-Distribution-Across-Tidal-Zones.png)
 
-### Visualization
+### Temporal Change in Tidal Zones
 
-* Matplotlib
-* Seaborn
+![Temporal Change of Height in Tidal Zone](figures/Temporal-Change-of-Height-in-Tidal-Zone.png)
 
----
+### Coastal Zone Area Change Over Time
 
-## Project Workflow
+![Coastal Zone Area Change Over Time](figures/Coastal-Zone-Area-change-Over-time.png)
 
-```text
-Raw / Generated Data
-        ↓
-Data Preparation
-        ↓
-Statistical Analysis
-        ↓
-SQLite Database
-        ↓
-GeoDataFrame Creation
-        ↓
-Spatial Processing
-        ↓
-Visualization
-        ↓
-Key Insights
-```
+Additional plots are available in the `figures/` directory.
 
----
+## Key Observations
 
-## Analysis
+The current analysis of the synthetic dataset illustrates patterns such as:
 
-The project includes:
+- Differences in temporal variability between tidal zones
+- Differences in height distributions across zones and basins
+- Changes in simulated coastal-zone area over time
 
-### 1. Data Generation
+**Interpretation note:** These are observations from synthetic data and should not be interpreted as evidence of actual environmental change. Real-world conclusions would require validated observational data and appropriate scientific context.
 
-A synthetic coastal tidal dataset covering the period **1982–2018** is generated for the three tidal zones.
-
-### 2. Temporal Analysis
-
-Time-series analysis is used to investigate changes and variability in tidal zones over time.
-
-### 3. Statistical Analysis
-
-The dataset is analyzed using Python statistical and data-processing libraries.
-
-### 4. GIS Data Processing
-
-Tabular data is converted into spatial data using **GeoPandas and Shapely**.
-
-### 5. Database Integration
-
-The analytical dataset is stored and managed using **SQLite**.
-
-### 6. Visualization
-
-Scientific visualizations are generated using **Matplotlib and Seaborn**.
-
----
-
-## Key Insights
-
-The analysis indicates that:
-
-* 🔵 **Subtidal zones** remain relatively stable over the analyzed period.
-* 🟡 **Intertidal zones** show greater temporal variability.
-* 🔴 **Supratidal zones** demonstrate higher environmental sensitivity.
-
-> These findings are based on the synthetic dataset created for this portfolio project and are intended to demonstrate the analytical workflow rather than represent observations from a specific real-world coastal monitoring program.
-
----
-
-## Project Structure
+## Repository Structure
 
 ```text
-Coastal-Tidal-Zones-Analysis/
+GIS-Tidal-Zones-Analysis-Project/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── tidal_data.csv
+│   └── tidal_data.gpkg
+│
+├── figures/
+│   ├── Coastal-Zone-Area-change-Over-time.png
+│   ├── Dataset.png
+│   ├── Height-Comparison-Across-Basins.png
+│   ├── Height-Distribution-Across-Tidal-Zones.png
+│   ├── Height-Distribution-Shape-per-Zone.png
+│   ├── Temporal-Change-of-Height-in-Tidal-Zone.png
+│   └── Tidal-Zone-GIS-Visualization.png
 │
 ├── src/
-│   └── main.py
+│   ├── analysis.py
+│   ├── gis_processing.py
+│   ├── main.py
+│   └── visualization.py
 │
-├── outputs/
-│   └── figures/
-│
-├── tidal_data.csv
-├── tidal.db
-├── tidal_data.gpkg
-│
+├── notebook.ipynb
 ├── requirements.txt
-├── README.md
-└── LICENSE
+├── .gitignore
+└── README.md
 ```
 
----
+## Getting Started
 
-## Output Files
-
-The project generates the following outputs:
-
-* `tidal_data.csv` — analytical dataset
-* `tidal.db` — SQLite database
-* `tidal_data.gpkg` — GIS spatial dataset
-* PNG figures — statistical and time-series visualizations
-
----
-
-## How to Run
-
-Clone the repository and install the required Python packages:
+### 1. Clone the repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/AramMehraban/GIS-Tidal-Zones-Analysis-Project.git
+cd GIS-Tidal-Zones-Analysis-Project
 ```
 
-Run the main analysis:
+### 2. Create a virtual environment (recommended)
+
+**Windows PowerShell:**
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks script activation, you can skip activation and use the Python executable inside the virtual environment directly.
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Run the analysis
 
 ```bash
 python src/main.py
 ```
 
-The generated datasets and visualizations will be saved in the corresponding project directories.
+You can also open `notebook.ipynb` in Jupyter Notebook or VS Code to explore the analysis interactively.
 
----
+> **Note:** The commands above describe the intended workflow. Successful execution depends on the installed dependencies and the current implementation of the scripts.
 
 ## Skills Demonstrated
 
-This project demonstrates practical experience in:
+- GIS and geospatial data processing
+- Spatial data handling with GeoPandas and Shapely
+- Python-based data analysis
+- Temporal and statistical analysis
+- Working with CSV and GeoPackage datasets
+- Database integration concepts using SQLite
+- Scientific visualization and analytical communication
+- Reproducible project organization and documentation
 
-* GIS data processing
-* Spatial data analysis
-* Temporal data analysis
-* Python data analytics
-* GeoPandas
-* Shapely
-* Pandas & NumPy
-* SQLite database integration
-* Scientific visualization
-* Reproducible analytical workflows
+## Project Purpose
 
----
+This project demonstrates a practical combination of GIS concepts and Python-based data analytics. It is intended as a portfolio example for roles such as:
 
-## Portfolio Value
+- GIS Analyst
+- Geospatial Data Analyst
+- Junior Data Analyst
+- GIS and Environmental Data Analytics Specialist
 
-This project combines **GIS expertise with modern Python data analytics**, demonstrating how spatial datasets can be transformed into structured analytical outputs, databases, visualizations, and interpretable insights.
-
-It is designed as a portfolio project for **GIS Analyst, Geospatial Data Analyst, Junior Data Analyst, and GIS/Data Analytics** positions.
-
----
+The project emphasizes transparent data documentation, structured processing, and clear visualization of analytical results.
 
 ## Author
 
 **Aram Mehraban**
 
-GIS & Data Analytics Portfolio Project
+GIS & Data Analytics Portfolio
 
----
-
-## License
-
-This project is licensed under the **MIT License**.
-
-See the `LICENSE` file for details.
+[GitHub Repository](https://github.com/AramMehraban/GIS-Tidal-Zones-Analysis-Project)
